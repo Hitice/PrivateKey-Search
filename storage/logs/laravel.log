@@ -1,0 +1,628 @@
+[2024-10-07 05:58:48] local.ERROR: SSL certificate problem: certificate has expired for "https://exemplo.com/". {"exception":"[object] (Symfony\\Component\\HttpClient\\Exception\\TransportException(code: 0): SSL certificate problem: certificate has expired for \"https://exemplo.com/\". at C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Chunk\\ErrorChunk.php:56)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\CommonResponseTrait.php(149): Symfony\\Component\\HttpClient\\Chunk\\ErrorChunk->isFirst()
+#1 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\CommonResponseTrait.php(43): Symfony\\Component\\HttpClient\\Response\\CurlResponse::initialize(Object(Symfony\\Component\\HttpClient\\Response\\CurlResponse))
+#2 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\CurlResponse.php(229): Symfony\\Component\\HttpClient\\Response\\CurlResponse->doGetContent(false)
+#3 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\browser-kit\\HttpBrowser.php(57): Symfony\\Component\\HttpClient\\Response\\CurlResponse->getContent(false)
+#4 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\browser-kit\\AbstractBrowser.php(385): Symfony\\Component\\BrowserKit\\HttpBrowser->doRequest(Object(Symfony\\Component\\BrowserKit\\Request))
+#5 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(23): Symfony\\Component\\BrowserKit\\AbstractBrowser->request('GET', 'https://exemplo...')
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#12 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+
+[previous exception] [object] (Symfony\\Component\\HttpClient\\Exception\\TransportException(code: 0): SSL certificate problem: certificate has expired for \"https://exemplo.com/\". at C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\CurlResponse.php:315)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\TransportResponseTrait.php(167): Symfony\\Component\\HttpClient\\Response\\CurlResponse::perform(Object(Symfony\\Component\\HttpClient\\Internal\\CurlClientState), Array)
+#1 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\CommonResponseTrait.php(148): Symfony\\Component\\HttpClient\\Response\\CurlResponse::stream(Array, NULL)
+#2 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\CommonResponseTrait.php(43): Symfony\\Component\\HttpClient\\Response\\CurlResponse::initialize(Object(Symfony\\Component\\HttpClient\\Response\\CurlResponse))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\http-client\\Response\\CurlResponse.php(229): Symfony\\Component\\HttpClient\\Response\\CurlResponse->doGetContent(false)
+#4 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\browser-kit\\HttpBrowser.php(57): Symfony\\Component\\HttpClient\\Response\\CurlResponse->getContent(false)
+#5 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\browser-kit\\AbstractBrowser.php(385): Symfony\\Component\\BrowserKit\\HttpBrowser->doRequest(Object(Symfony\\Component\\BrowserKit\\Request))
+#6 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(23): Symfony\\Component\\BrowserKit\\AbstractBrowser->request('GET', 'https://exemplo...')
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#13 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 {main}
+"} 
+[2024-10-07 06:03:48] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crawler.crawler_data' doesn't exist (Connection: mysql, SQL: insert into `crawler_data` (`regex_match`, `found_at`, `updated_at`, `created_at`) values (KzAjXrVeH7P1THZNauU1FGYDfnVD3E2W6eRuS2qJohutUBo1nM1k, https://privatekeys.pw/key/57fb17f42cbd4221efe74445f00a0b75a4640f5d7ab63198eb864014d7daab5d#wif, 2024-10-07 06:03:47, 2024-10-07 06:03:47)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crawler.crawler_data' doesn't exist (Connection: mysql, SQL: insert into `crawler_data` (`regex_match`, `found_at`, `updated_at`, `created_at`) values (KzAjXrVeH7P1THZNauU1FGYDfnVD3E2W6eRuS2qJohutUBo1nM1k, https://privatekeys.pw/key/57fb17f42cbd4221efe74445f00a0b75a4640f5d7ab63198eb864014d7daab5d#wif, 2024-10-07 06:03:47, 2024-10-07 06:03:47)) at C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:829)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback('insert into `cr...', Array, Object(Closure))
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(50): Illuminate\\Database\\Connection->run('insert into `cr...', Array, Object(Closure))
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\MySqlProcessor.php(35): Illuminate\\Database\\MySqlConnection->insert('insert into `cr...', Array, 'id')
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3549): Illuminate\\Database\\Query\\Processors\\MySqlProcessor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `cr...', Array, 'id')
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1982): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1334): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1299): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1138): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1025): Illuminate\\Database\\Eloquent\\Model->save()
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(307): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\CrawlerData))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1026): tap(Object(App\\Models\\CrawlerData), Object(Closure))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#13 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#14 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(39): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#15 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#16 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#21 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crawler.crawler_data' doesn't exist at C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php:39)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(39): PDO->prepare('insert into `cr...')
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(816): Illuminate\\Database\\MySqlConnection->Illuminate\\Database\\{closure}('insert into `cr...', Array)
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback('insert into `cr...', Array, Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(50): Illuminate\\Database\\Connection->run('insert into `cr...', Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\MySqlProcessor.php(35): Illuminate\\Database\\MySqlConnection->insert('insert into `cr...', Array, 'id')
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3549): Illuminate\\Database\\Query\\Processors\\MySqlProcessor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `cr...', Array, 'id')
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1982): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1334): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1299): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1138): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1025): Illuminate\\Database\\Eloquent\\Model->save()
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(307): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\CrawlerData))
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1026): tap(Object(App\\Models\\CrawlerData), Object(Closure))
+#13 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#14 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#15 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#16 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(39): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#17 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#18 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#20 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#21 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#22 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#23 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#24 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 {main}
+"} 
+[2024-10-07 06:07:42] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crawler.crawler_data' doesn't exist (Connection: mysql, SQL: insert into `crawler_data` (`regex_match`, `found_at`, `updated_at`, `created_at`) values (KzAjXrVeH7P1THZNauU1FGYDfnVD3E2W6eRuS2qJohutUBo1nM1k, https://privatekeys.pw/key/57fb17f42cbd4221efe74445f00a0b75a4640f5d7ab63198eb864014d7daab5d#wif, 2024-10-07 06:07:42, 2024-10-07 06:07:42)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crawler.crawler_data' doesn't exist (Connection: mysql, SQL: insert into `crawler_data` (`regex_match`, `found_at`, `updated_at`, `created_at`) values (KzAjXrVeH7P1THZNauU1FGYDfnVD3E2W6eRuS2qJohutUBo1nM1k, https://privatekeys.pw/key/57fb17f42cbd4221efe74445f00a0b75a4640f5d7ab63198eb864014d7daab5d#wif, 2024-10-07 06:07:42, 2024-10-07 06:07:42)) at C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:829)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback('insert into `cr...', Array, Object(Closure))
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(50): Illuminate\\Database\\Connection->run('insert into `cr...', Array, Object(Closure))
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\MySqlProcessor.php(35): Illuminate\\Database\\MySqlConnection->insert('insert into `cr...', Array, 'id')
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3549): Illuminate\\Database\\Query\\Processors\\MySqlProcessor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `cr...', Array, 'id')
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1982): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1334): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1299): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1138): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1025): Illuminate\\Database\\Eloquent\\Model->save()
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(307): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\CrawlerData))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1026): tap(Object(App\\Models\\CrawlerData), Object(Closure))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#13 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#14 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(39): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#15 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#16 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#21 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crawler.crawler_data' doesn't exist at C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php:39)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(39): PDO->prepare('insert into `cr...')
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(816): Illuminate\\Database\\MySqlConnection->Illuminate\\Database\\{closure}('insert into `cr...', Array)
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback('insert into `cr...', Array, Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(50): Illuminate\\Database\\Connection->run('insert into `cr...', Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\MySqlProcessor.php(35): Illuminate\\Database\\MySqlConnection->insert('insert into `cr...', Array, 'id')
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3549): Illuminate\\Database\\Query\\Processors\\MySqlProcessor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `cr...', Array, 'id')
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1982): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1334): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1299): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1138): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1025): Illuminate\\Database\\Eloquent\\Model->save()
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(307): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\CrawlerData))
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1026): tap(Object(App\\Models\\CrawlerData), Object(Closure))
+#13 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#14 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#15 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#16 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(39): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#17 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#18 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#20 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#21 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#22 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#23 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#24 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 {main}
+"} 
+[2024-10-07 06:08:02] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'laravel' (Connection: mysql, SQL: insert into `crawler_data` (`regex_match`, `found_at`, `updated_at`, `created_at`) values (KzAjXrVeH7P1THZNauU1FGYDfnVD3E2W6eRuS2qJohutUBo1nM1k, https://privatekeys.pw/key/57fb17f42cbd4221efe74445f00a0b75a4640f5d7ab63198eb864014d7daab5d#wif, 2024-10-07 06:08:02, 2024-10-07 06:08:02)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'laravel' (Connection: mysql, SQL: insert into `crawler_data` (`regex_match`, `found_at`, `updated_at`, `created_at`) values (KzAjXrVeH7P1THZNauU1FGYDfnVD3E2W6eRuS2qJohutUBo1nM1k, https://privatekeys.pw/key/57fb17f42cbd4221efe74445f00a0b75a4640f5d7ab63198eb864014d7daab5d#wif, 2024-10-07 06:08:02, 2024-10-07 06:08:02)) at C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:829)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback('insert into `cr...', Array, Object(Closure))
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(50): Illuminate\\Database\\Connection->run('insert into `cr...', Array, Object(Closure))
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\MySqlProcessor.php(35): Illuminate\\Database\\MySqlConnection->insert('insert into `cr...', Array, 'id')
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3549): Illuminate\\Database\\Query\\Processors\\MySqlProcessor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `cr...', Array, 'id')
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1982): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1334): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1299): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1138): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1025): Illuminate\\Database\\Eloquent\\Model->save()
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(307): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\CrawlerData))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1026): tap(Object(App\\Models\\CrawlerData), Object(Closure))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#13 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#14 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(39): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#15 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#16 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#18 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#21 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+
+[previous exception] [object] (PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'laravel' at C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:65)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(65): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(45): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1339): call_user_func(Object(Closure))
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(39): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(816): Illuminate\\Database\\MySqlConnection->Illuminate\\Database\\{closure}('insert into `cr...', Array)
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback('insert into `cr...', Array, Object(Closure))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(50): Illuminate\\Database\\Connection->run('insert into `cr...', Array, Object(Closure))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\MySqlProcessor.php(35): Illuminate\\Database\\MySqlConnection->insert('insert into `cr...', Array, 'id')
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3549): Illuminate\\Database\\Query\\Processors\\MySqlProcessor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `cr...', Array, 'id')
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1982): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#13 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1334): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#14 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1299): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#15 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1138): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#16 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1025): Illuminate\\Database\\Eloquent\\Model->save()
+#17 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(307): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\CrawlerData))
+#18 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1026): tap(Object(App\\Models\\CrawlerData), Object(Closure))
+#19 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#20 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2335): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#21 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2347): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#22 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(39): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#23 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#24 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#25 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#26 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#29 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2024-10-07 06:11:15] local.ERROR: Class "App\Models\CrawlerData" not found {"exception":"[object] (Error(code: 0): Class \"App\\Models\\CrawlerData\" not found at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php:37)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2024-10-07 06:12:12] local.ERROR: Class "App\Models\CrawlerData" not found {"exception":"[object] (Error(code: 0): Class \"App\\Models\\CrawlerData\" not found at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php:37)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2024-10-07 06:12:37] local.ERROR: Class "App\Models\CrawlerData" not found {"exception":"[object] (Error(code: 0): Class \"App\\Models\\CrawlerData\" not found at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php:37)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2024-10-07 06:19:24] local.ERROR: The current node list is empty. {"exception":"[object] (InvalidArgumentException(code: 0): The current node list is empty. at C:\\laragon\\www\\crawler_project\\vendor\\symfony\\dom-crawler\\Crawler.php:575)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(39): Symfony\\Component\\DomCrawler\\Crawler->text()
+#1 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(57): App\\Console\\Commands\\CrawlerCommand->crawl('https://www.4sh...')
+#2 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\dom-crawler\\Crawler.php(344): App\\Console\\Commands\\CrawlerCommand->App\\Console\\Commands\\{closure}(Object(Symfony\\Component\\DomCrawler\\Crawler), 18)
+#3 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(59): Symfony\\Component\\DomCrawler\\Crawler->each(Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(18): App\\Console\\Commands\\CrawlerCommand->crawl('https://www.4sh...')
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#11 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
+[2024-10-07 06:47:38] local.ERROR: Call to a member function text() on null {"exception":"[object] (Error(code: 0): Call to a member function text() on null at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php:121)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(94): App\\Console\\Commands\\CrawlerCommand->isWithinDateRange(Object(Symfony\\Component\\DomCrawler\\Crawler))
+#1 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\dom-crawler\\Crawler.php(344): App\\Console\\Commands\\CrawlerCommand->App\\Console\\Commands\\{closure}(Object(Symfony\\Component\\DomCrawler\\Crawler), 378)
+#2 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(98): Symfony\\Component\\DomCrawler\\Crawler->each(Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(54): App\\Console\\Commands\\CrawlerCommand->followLinks(Object(Symfony\\Component\\DomCrawler\\Crawler), Object(Goutte\\Client), '/(?:5[HJK][1-9A...')
+#4 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php(26): App\\Console\\Commands\\CrawlerCommand->crawl(Object(Goutte\\Client), 'https://bitcoin...', '/(?:5[HJK][1-9A...')
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#11 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
+[2024-10-07 06:50:04] local.ERROR: No arguments expected for "crawler:start" command, got "https://bitcointalk.org/". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"crawler:start\" command, got \"https://bitcointalk.org/\". at C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Input\\ArgvInput.php:196)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Input\\ArgvInput.php(89): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument('https://bitcoin...')
+#1 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('https://bitcoin...', true)
+#2 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2024-10-07 15:03:03] local.ERROR: Failed to crawl URL {"url":"https://bitcointalk.org/index.php?topic=5507.0#","error":"Could not resolve host: bitcointalk.org for \"https://bitcointalk.org/index.php?topic=5507.0\"."} 
+[2024-10-09 22:09:47] local.ERROR: Call to undefined method Goutte\Client::setHeader() {"exception":"[object] (Error(code: 0): Call to undefined method Goutte\\Client::setHeader() at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php:31)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2024-10-09 22:14:07] local.ERROR: Call to undefined method Goutte\Client::setHeader() {"exception":"[object] (Error(code: 0): Call to undefined method Goutte\\Client::setHeader() at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php:31)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2024-10-09 22:15:40] local.ERROR: Call to undefined method Goutte\Client::setClient() {"exception":"[object] (Error(code: 0): Call to undefined method Goutte\\Client::setClient() at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\CrawlerCommand.php:37)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\CrawlerCommand->handle()
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\CrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2024-10-09 22:23:19] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5507648.new#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5507648.new#new\"."} 
+[2024-10-09 22:23:22] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512419.new#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512419.new#new\"."} 
+[2024-10-09 22:23:25] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5482940.new#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5482940.new#new\"."} 
+[2024-10-09 22:23:28] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5421039.new#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5421039.new#new\"."} 
+[2024-10-09 22:23:31] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512015.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512015.0\"."} 
+[2024-10-09 22:23:34] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512015.msg64615109#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512015.msg64615109#new\"."} 
+[2024-10-09 22:23:37] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=20333.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=20333.0\"."} 
+[2024-10-09 22:23:40] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=20333.20","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=20333.20\"."} 
+[2024-10-09 22:23:43] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=20333.880","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=20333.880\"."} 
+[2024-10-09 22:23:46] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=20333.900","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=20333.900\"."} 
+[2024-10-09 22:23:49] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=20333.msg64269402#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=20333.msg64269402#new\"."} 
+[2024-10-09 22:23:52] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=1649348.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=1649348.0\"."} 
+[2024-10-09 22:23:55] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=1649348.0#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=1649348.0#new\"."} 
+[2024-10-09 22:23:58] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512259.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512259.0\"."} 
+[2024-10-09 22:24:01] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512259.20","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512259.20\"."} 
+[2024-10-09 22:24:04] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512259.40","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512259.40\"."} 
+[2024-10-09 22:24:07] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512259.0;all","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512259.0;all\"."} 
+[2024-10-09 22:24:10] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512259.msg64617700#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512259.msg64617700#new\"."} 
+[2024-10-09 22:24:13] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5511762.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5511762.0\"."} 
+[2024-10-09 22:24:16] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5511762.20","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5511762.20\"."} 
+[2024-10-09 22:24:19] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5511762.160","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5511762.160\"."} 
+[2024-10-09 22:24:22] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5511762.180","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5511762.180\"."} 
+[2024-10-09 22:24:25] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5511762.0;all","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5511762.0;all\"."} 
+[2024-10-09 22:24:28] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5511762.msg64617674#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5511762.msg64617674#new\"."} 
+[2024-10-09 22:24:31] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5478905.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5478905.0\"."} 
+[2024-10-09 22:24:34] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5478905.20","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5478905.20\"."} 
+[2024-10-09 22:24:37] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5478905.1420","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5478905.1420\"."} 
+[2024-10-09 22:24:40] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5478905.1440","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5478905.1440\"."} 
+[2024-10-09 22:24:44] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5478905.msg64617673#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5478905.msg64617673#new\"."} 
+[2024-10-09 22:24:47] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512622.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512622.0\"."} 
+[2024-10-09 22:24:50] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5512622.msg64617628#new","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5512622.msg64617628#new\"."} 
+[2024-10-09 22:24:53] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5510759.0","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5510759.0\"."} 
+[2024-10-09 22:24:56] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5510759.20","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5510759.20\"."} 
+[2024-10-09 22:24:59] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5510759.40","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5510759.40\"."} 
+[2024-10-09 22:25:02] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5510759.60","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5510759.60\"."} 
+[2024-10-09 22:25:05] local.ERROR: Falha ao rastrear URL {"url":"https://bitcointalk.orghttps://bitcointalk.org/index.php?topic=5510759.0;all","erro":"Could not resolve host: bitcointalk.orghttps for \"https://bitcointalk.orghttps//bitcointalk.org/index.php?topic=5510759.0;all\"."} 
+[2024-10-09 22:25:21] local.ERROR: Falha no Crawler {"erro":"HTTP/2 403  returned for \"https://bitcointalk.org/index.php?topic=5507648.0;all\"."} 
+[2024-10-09 22:54:42] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 22:58:02] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 22:58:09] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 22:58:29] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:05:47] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:05:50] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:06:11] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:06:14] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:06:39] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:06:41] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:08:22] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:08:22] local.ERROR: A CreateCrawlerResultsTable class already exists. {"exception":"[object] (InvalidArgumentException(code: 0): A CreateCrawlerResultsTable class already exists. at C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\MigrationCreator.php:102)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\MigrationCreator.php(59): Illuminate\\Database\\Migrations\\MigrationCreator->ensureMigrationDoesntAlreadyExist('create_crawler_...', 'C:\\\\laragon\\\\www\\\\...')
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand.php(111): Illuminate\\Database\\Migrations\\MigrationCreator->create('create_crawler_...', 'C:\\\\laragon\\\\www\\\\...', 'crawler_results', true)
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand.php(97): Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand->writeMigration('create_crawler_...', 'crawler_results', true)
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand->handle()
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#7 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2024-10-09 23:09:08] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:09:12] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:09:21] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:14:21] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:27:44] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:31:19] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:31:26] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:35:57] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:37:48] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:37:50] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1230768000..1233446399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:51] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1233446400..1235865599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:51] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1235865600..1238543999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:51] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1238544000..1241135999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:53] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1241136000..1243814399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:53] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1243814400..1246406399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:54] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1246406400..1249084799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:54] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1249084800..1251763199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:55] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1251763200..1254355199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:56] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1254355200..1257033599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:56] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1257033600..1259625599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:56] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1259625600..1262303999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:57] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1262304000..1264982399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:57] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1264982400..1267401599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:57] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1267401600..1270079999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:58] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1270080000..1272671999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:58] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1272672000..1275350399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:58] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1275350400..1277942399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:58] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1277942400..1280620799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:59] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1280620800..1283299199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:59] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1283299200..1285891199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:37:59] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1285891200..1288569599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:00] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1288569600..1291161599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:00] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1291161600..1293839999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:00] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1293840000..1296518399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:01] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1296518400..1298937599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:01] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1298937600..1301615999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:01] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1301616000..1304207999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:03] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1304208000..1306886399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:03] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1306886400..1309478399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:03] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1309478400..1312156799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:05] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1312156800..1314835199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:07] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1314835200..1317427199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:08] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1317427200..1320105599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:09] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1320105600..1322697599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:09] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1322697600..1325375999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:09] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1325376000..1328054399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:10] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1328054400..1330559999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:10] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1330560000..1333238399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:10] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1333238400..1335830399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:10] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1335830400..1338508799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:11] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1338508800..1341100799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:11] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1341100800..1343779199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:12] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1343779200..1346457599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:12] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1346457600..1349049599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:13] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1349049600..1351727999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:13] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1351728000..1354319999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:13] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1354320000..1356998399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:14] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1356998400..1359676799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:14] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1359676800..1362095999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:14] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1362096000..1364774399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:14] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1364774400..1367366399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:16] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1367366400..1370044799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:16] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1370044800..1372636799&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:17] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1372636800..1375315199&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:17] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1375315200..1377993599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:17] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1377993600..1380585599&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:17] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1380585600..1383263999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:18] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1383264000..1385855999&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:38:18] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/r/Bitcoin/search?q=timestamp:1385856000..1388534399&restrict_sr=on&sort=new&t=all  
+[2024-10-09 23:39:47] local.ERROR: Falha na autenticação com a API do Reddit {"erro":"Undefined array key \"access_token\""} 
+[2024-10-09 23:39:49] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1230768000..1233446399  
+[2024-10-09 23:39:50] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1233446400..1235865599  
+[2024-10-09 23:39:51] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1235865600..1238543999  
+[2024-10-09 23:39:52] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1238544000..1241135999  
+[2024-10-09 23:39:53] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1241136000..1243814399  
+[2024-10-09 23:39:54] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1243814400..1246406399  
+[2024-10-09 23:39:55] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1246406400..1249084799  
+[2024-10-09 23:39:57] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1249084800..1251763199  
+[2024-10-09 23:39:58] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1251763200..1254355199  
+[2024-10-09 23:39:59] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1254355200..1257033599  
+[2024-10-09 23:40:00] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1257033600..1259625599  
+[2024-10-09 23:40:01] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1259625600..1262303999  
+[2024-10-09 23:40:02] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1262304000..1264982399  
+[2024-10-09 23:40:04] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1264982400..1267401599  
+[2024-10-09 23:40:05] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1267401600..1270079999  
+[2024-10-09 23:40:06] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1270080000..1272671999  
+[2024-10-09 23:40:07] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1272672000..1275350399  
+[2024-10-09 23:40:08] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1275350400..1277942399  
+[2024-10-09 23:40:09] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1277942400..1280620799  
+[2024-10-09 23:40:10] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1280620800..1283299199  
+[2024-10-09 23:40:11] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1283299200..1285891199  
+[2024-10-09 23:40:12] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1285891200..1288569599  
+[2024-10-09 23:40:13] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1288569600..1291161599  
+[2024-10-09 23:40:15] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1291161600..1293839999  
+[2024-10-09 23:40:16] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1293840000..1296518399  
+[2024-10-09 23:40:17] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1296518400..1298937599  
+[2024-10-09 23:40:18] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1298937600..1301615999  
+[2024-10-09 23:40:19] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1301616000..1304207999  
+[2024-10-09 23:40:21] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1304208000..1306886399  
+[2024-10-09 23:40:22] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1306886400..1309478399  
+[2024-10-09 23:40:23] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1309478400..1312156799  
+[2024-10-09 23:40:24] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1312156800..1314835199  
+[2024-10-09 23:40:26] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1314835200..1317427199  
+[2024-10-09 23:40:27] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1317427200..1320105599  
+[2024-10-09 23:40:29] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1320105600..1322697599  
+[2024-10-09 23:40:30] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1322697600..1325375999  
+[2024-10-09 23:40:31] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1325376000..1328054399  
+[2024-10-09 23:40:32] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1328054400..1330559999  
+[2024-10-09 23:40:34] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1330560000..1333238399  
+[2024-10-09 23:40:35] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1333238400..1335830399  
+[2024-10-09 23:40:36] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1335830400..1338508799  
+[2024-10-09 23:40:37] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1338508800..1341100799  
+[2024-10-09 23:40:39] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1341100800..1343779199  
+[2024-10-09 23:40:40] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1343779200..1346457599  
+[2024-10-09 23:40:41] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1346457600..1349049599  
+[2024-10-09 23:40:42] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1349049600..1351727999  
+[2024-10-09 23:40:43] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1351728000..1354319999  
+[2024-10-09 23:40:44] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1354320000..1356998399  
+[2024-10-09 23:40:46] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1356998400..1359676799  
+[2024-10-09 23:40:47] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1359676800..1362095999  
+[2024-10-09 23:40:48] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1362096000..1364774399  
+[2024-10-09 23:40:49] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1364774400..1367366399  
+[2024-10-09 23:40:50] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1367366400..1370044799  
+[2024-10-09 23:40:51] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1370044800..1372636799  
+[2024-10-09 23:40:52] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1372636800..1375315199  
+[2024-10-09 23:40:53] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1375315200..1377993599  
+[2024-10-09 23:40:54] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1377993600..1380585599  
+[2024-10-09 23:40:55] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1380585600..1383263999  
+[2024-10-09 23:40:57] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1383264000..1385855999  
+[2024-10-09 23:40:58] local.INFO: Requisição bem-sucedida para: https://oauth.reddit.com/search?q=Bitcoin&sort=new&limit=100&timestamp=1385856000..1388534399  
+[2024-10-09 23:47:11] local.ERROR: Class "Goutte\Client" not found {"exception":"[object] (Error(code: 0): Class \"Goutte\\Client\" not found at C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\BitcoinTalkCrawlerCommand.php:30)
+[stacktrace]
+#0 C:\\laragon\\www\\crawler_project\\app\\Console\\Commands\\BitcoinTalkCrawlerCommand.php(22): App\\Console\\Commands\\BitcointalkCrawlerCommand->crawlBitcointalk('2009')
+#1 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\BitcointalkCrawlerCommand->handle()
+#2 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#7 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(App\\Console\\Commands\\BitcointalkCrawlerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\laragon\\www\\crawler_project\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 C:\\laragon\\www\\crawler_project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 C:\\laragon\\www\\crawler_project\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
